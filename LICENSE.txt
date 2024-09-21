@@ -1,0 +1,16 @@
+Copyright (c) 2018, LofentBlack.de
+
+Dieses Batch-Skript wird unter den folgenden Bedingungen lizenziert:
+
+1. **Erlaubte Nutzung**: 
+   - Dieses Skript darf für **persönliche, nicht-kommerzielle Zwecke** verwendet und modifiziert werden.
+
+2. **Verbot der Weiterverbreitung**:
+   - Es ist nicht erlaubt, dieses Skript oder modifizierte Versionen davon in irgendeiner Form zu veröffentlichen, zu verteilen oder an Dritte weiterzugeben.
+
+3. **Anerkennung des Autors**:
+   - Modifikationen des Skripts dürfen nicht als eigenes Werk ausgegeben werden. Jeder Hinweis auf den ursprünglichen Autor darf nicht entfernt oder verändert werden.
+
+4. **Keine Gewährleistung**:
+   - Dieses Skript wird „wie es ist“ ohne Garantie zur Verfügung gestellt. Der Autor übernimmt keine Verantwortung für etwaige Schäden, die durch die Nutzung des Skripts entstehen.
+
