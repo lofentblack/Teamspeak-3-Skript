@@ -6,10 +6,11 @@
 
 ```./Teamspeak3-Skript.sh```
 
+<img src="https://i.ibb.co/q7T2bT8/ts3.png" alt="ts3" border="0">
 
 ## Teamspeak-Server-Verwaltungsskript ##
 
-Dieses Shell-Skript dient zur Vereinfachung der Verwaltung von Prozessen.
+Mit diesem Skript kann man ganz einfach seinen Teamspeak-Server verwalten, unter anderem einen Teamspeak-Server installieren, deinstallieren, aktualisieren und neu installieren.
 
 
 ## Installation ##

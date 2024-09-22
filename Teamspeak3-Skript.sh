@@ -41,9 +41,9 @@ if ! [[ $version == $SkriptVersion ]]; then
 	echo "$(tput sgr0)"
 	wget wget https://raw.githubusercontent.com/lofentblack/Teamspeak-3-Skript/refs/heads/main/Teamspeak3-Skript.sh -O Teamspeak3-Skript.sh.new
 	rm $LOCK
-	chmod 775 Teamspeak3-Skript.sh.x
-	rm Teamspeak3-Skript.sh.x
-	mv Teamspeak3-Skript.sh.x Teamspeak3-Skript.sh.x
+	chmod 775 Teamspeak3-Skript.sh
+	rm Teamspeak3-Skript.sh
+	mv Teamspeak3-Skript.sh.new Teamspeak3-Skript.sh
 
 fi
 }
