@@ -101,7 +101,7 @@ wget $Test -O ./latest.tar.bz2
 
 if ! [ -f latest.tar.bz2 ]; then
 	echo $rot
-	echo "Teamspeak 3 Server nicht herunterladen. File Not found!"
+	echo "Teamspeak 3 Server nicht herunterladen. Datei nicht gefunden!"
 	exit 0;
 fi
 
@@ -129,7 +129,7 @@ clear
 	echo "$(tput setaf 2)"
 	figlet -f slant -c $SCRIPTNAME
 	echo $rot
-	echo "Mit dem Ausführen des Skripts Akzeptierst du der Lizenz von LofentBlack.de und die von Teamspeak."
+	echo "Mit dem Ausführen des Skripts Akzeptierst du der Lizenz von LofentBlack.de/licence und der von Teamspeak."
 	echo "$(tput sgr0)"
 
 	read -p "Befindet sich auf diesem Server ein Teamspeak Server? (Y/N): " server
