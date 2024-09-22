@@ -77,7 +77,7 @@ sleep 1
 
 clear
 clear
-echo $gruen"Bitte starte das Script neu!"
+echo $gruen"Bitte starte das Skript neu!"
 echo "$(tput sgr0)"
 
 }
@@ -129,14 +129,14 @@ clear
 	echo "$(tput setaf 2)"
 	figlet -f slant -c $SCRIPTNAME
 	echo $rot
-	echo "Mit dem Ausführen des Skripts Akzeptierst du der Lizenz von LofentBlack.de/licence und der von Teamspeak."
+	echo "Mit dem Ausführen des Skripts akzeptierst du der Lizenz von LofentBlack.de/licence und der von Teamspeak."
 	echo "$(tput sgr0)"
 
-	read -p "Befindet sich auf diesem Server ein Teamspeak Server? (Y/N): " server
+	read -p "Befindet sich auf diesem Server ein Teamspeak 3 Server? (Y/N): " server
 
 	if [ $server = "y" ] || [ $server = "Y" ] || [ $server = "J" ] || [ $server = "j" ] || [ $server = "ja" ] || [ $server = "Ja" ] || [ $server = "Yes" ] || [ $server = "yes" ] || [ $server = "ok" ] || [ $server = "Ok" ] || [ $server = "OK" ] || [ $server = "oK" ] || [ $server = "JA" ] || [ $server = "jA" ] || [ $server = "YES" ] || [ $server = "YEs" ] || [ $server = "yES" ] || [ $server = "yeS" ] || [ $server = "YeS" ] || [ $server = "yES" ] || [ $server = "yEs" ]; then
 	echo $turkies
-	echo 'wo ist dein Temspeak3-Server Vezeichniss Angebe z.B. (/home/ts3)'
+	echo 'Wo ist dein Teamspeak 3-Server Vezeichnis angebe z.B. (/home/ts3)'
 
 	read -p "Verzeichnis: " Verzeichnis
 	if ! [ -s $Verzeichnis/ ]; then
@@ -147,10 +147,10 @@ clear
 	cd $Verzeichnis
 	if [ -s ts3server_startscript.sh ]; then
 		echo $gruen
-		echo "Teamspeak Server Gefunden!"
+		echo "Teamspeak Server gefunden!"
 	else
 		echo $rot
-		echo "Teamspeak 3 Server nicht Gefunden!"
+		echo "Teamspeak 3 Server nicht gefunden!"
 	fi
 	echo $turkies
 	echo "$(tput sgr0)"
@@ -162,7 +162,7 @@ clear
 		sleep 1
 		LOGO
 		echo "1.) Teamspeak Server Updaten"
-		echo "2.) Teamspeak Server Neuinsterlieren"
+		echo "2.) Teamspeak Server Neuinstallieren"
 		echo "3.) Teamspeak Server Löschen"
 		echo "4.) Beenden"
 		read -p "Was soll am Teamspeak Server gemacht werden? " Teamspeak
@@ -187,7 +187,7 @@ clear
 					
 					
 					LOGO
-					echo "ladevorgang.."
+					echo "Ladevorgang.."
 					mv ts3-update-LB-script/ ..
 					cd ..
 					rm -r $Verzeichnis/*
@@ -195,17 +195,17 @@ clear
 					download
 
 					LOGO
-					echo "ladevorgang..."
+					echo "Ladevorgang..."
 					tar -xjf ./latest.tar.bz2
 					sleep 1
 					LOGO
-					echo "ladevorgang...."
+					echo "Ladevorgang...."
 					mv teamspeak3-server_linux_amd64/* $Verzeichnis
 					rm -r ./latest.tar.bz2
 					rm -r ./teamspeak3-server_linux_amd64
 					sleep 1
 					LOGO
-					echo "ladevorgang....."
+					echo "Ladevorgang....."
 					cd $Verzeichnis/
 					chmod 775 ts3server_startscript.sh
 					chmod 775 ts3server_minimal_runscript.sh
@@ -215,22 +215,22 @@ clear
 					
 					sleep 1
 					LOGO
-					echo "ladevorgang....."
+					echo "Ladevorgang....."
 					cd ..
 					mv ./ts3-update-LB-script/* $Verzeichnis/
 					rm -r ./ts3-update-LB-script
 					sleep 1
 					LOGO
-					echo "ladevorgang....."
+					echo "Ladevorgang....."
 					sleep 1
 					LOGO
-					echo "Der Server wurde Erfolgreich geupdatet!"
+					echo "Der Server wurde Erfolgreich upgedatet!"
 					
 					cd $Verzeichnis/
 					#screen -Sdm Teamspeak ./ts3server_minimal_runscript.sh
 					
 				else
-				  	echo "Der Server wurde nicht geupdatet!"
+				  	echo "Der Server wurde nicht upgedatet!"
 				fi
 
 
@@ -262,10 +262,10 @@ clear
 					if [ $STARTEN = "y" ] || [ $STARTEN = "Y" ] || [ $STARTEN = "J" ] || [ $STARTEN = "j" ] || [ $STARTEN = "ja" ] || [ $STARTEN = "Ja" ] || [ $STARTEN = "Yes" ] || [ $STARTEN = "yes" ] || [ $STARTEN = "ok" ] || [ $STARTEN = "Ok" ] || [ $STARTEN = "OK" ] || [ $STARTEN = "oK" ] || [ $STARTEN = "JA" ] || [ $STARTEN = "jA" ] || [ $STARTEN = "YES" ] || [ $STARTEN = "YEs" ] || [ $STARTEN = "yES" ] || [ $STARTEN = "yeS" ] || [ $STARTEN = "YeS" ] || [ $STARTEN = "yES" ] || [ $STARTEN = "yEs" ]; then
 						screen -Sdm Teamspeak ./ts3server_minimal_runscript.sh start
 						echo ""
-						echo "Server wurde Gestartet!"
+						echo "Server wurde gestartet!"
 					else
 						echo ""
-						echo "Server wurde nicht Gestartet!"
+						echo "Server wurde nicht gestartet!"
 					fi
 
 			else
@@ -275,7 +275,7 @@ clear
 		elif [ $Teamspeak = 3 ]; then
 			LOGO
 			echo $rot
-			echo "Okay, der Teamspeak Server wird Gelöscht und damit gehen ALLE Daten Verloren. Sind Sie sicher das Sie den Teamspeak Server Löschen möchten?"
+			echo "Okay, der Teamspeak Server wird gelöscht und damit gehen ALLE Daten verloren. Sind Sie sicher, dass Sie den Teamspeak Server Löschen möchten? "
 			echo "$(tput sgr0)"
 			read -p "(L)öschen oder (B)ehalten (L/B): " SICHER
 			if [ $SICHER = "L" ] || [ $SICHER = "l" ]; then
@@ -304,14 +304,14 @@ clear
 
 	if [ $INSTALATION = "y" ] || [ $INSTALATION = "Y" ] || [ $INSTALATION = "J" ] || [ $INSTALATION = "j" ] || [ $INSTALATION = "ja" ] || [ $INSTALATION = "Ja" ] || [ $INSTALATION = "Yes" ] || [ $INSTALATION = "yes" ] || [ $INSTALATION = "ok" ] || [ $INSTALATION = "Ok" ] || [ $INSTALATION = "OK" ] || [ $INSTALATION = "oK" ] || [ $INSTALATION = "JA" ] || [ $INSTALATION = "jA" ] || [ $INSTALATION = "YES" ] || [ $INSTALATION = "YEs" ] || [ $INSTALATION = "yES" ] || [ $INSTALATION = "yeS" ] || [ $INSTALATION = "YeS" ] || [ $INSTALATION = "yES" ] || [ $INSTALATION = "yEs" ]; then
 		echo ""
-		echo "Bitte Gebe ein Verzeichnis an,"
+		echo "Bitte gebe ein Verzeichnis an,"
 		echo "wo der Server installiert werden soll z.b(/home/ts3/)"
 		read -p "Wo soll der Server installiert werden?: " Verzeichnis
 		if ! [ -s $Verzeichnis/ ]; then
 			mkdir $Verzeichnis
 			if ! [ -s $Verzeichnis/ ]; then
 				echo "Verzeichnis konnte nicht erstellt werden da es zu viele Unterordner sind."
-				echo "Versuchen Sie das Verzeichnis selber zu Erstellen"
+				echo "Versuchen Sie das Verzeichnis selber zu Erstellen."
 			fi
 			if [ -s $Verzeichnis/ ]; then
 				echo "Verzeichnis wurde erstellt."
@@ -334,13 +334,13 @@ clear
 					if [ $STARTEN = "y" ] || [ $STARTEN = "Y" ] || [ $STARTEN = "J" ] || [ $STARTEN = "j" ] || [ $STARTEN = "ja" ] || [ $STARTEN = "Ja" ] || [ $STARTEN = "Yes" ] || [ $STARTEN = "yes" ] || [ $STARTEN = "ok" ] || [ $STARTEN = "Ok" ] || [ $STARTEN = "OK" ] || [ $STARTEN = "oK" ] || [ $STARTEN = "JA" ] || [ $STARTEN = "jA" ] || [ $STARTEN = "YES" ] || [ $STARTEN = "YEs" ] || [ $STARTEN = "yES" ] || [ $STARTEN = "yeS" ] || [ $STARTEN = "YeS" ] || [ $STARTEN = "yES" ] || [ $STARTEN = "yEs" ]; then
 						screen -Sdm Teamspeak ./ts3server_minimal_runscript.sh start
 						echo ""
-						echo "Server wurde Gestartet!"
+						echo "Server wurde gestartet!"
 					else
 						echo ""
-						echo "Server wurde nicht Gestartet!"
+						echo "Server wurde nicht gestartet!"
 					fi
 				else
-					echo "Hier befindet sich Bereits ein Teamspeak!"
+					echo "Hier befindet sich Bereits ein Teamspeak-Server!"
 				fi
 			fi
 		else
@@ -363,17 +363,17 @@ clear
 				if [ $STARTEN = "y" ] || [ $STARTEN = "Y" ] || [ $STARTEN = "J" ] || [ $STARTEN = "j" ] || [ $STARTEN = "ja" ] || [ $STARTEN = "Ja" ] || [ $STARTEN = "Yes" ] || [ $STARTEN = "yes" ] || [ $STARTEN = "ok" ] || [ $STARTEN = "Ok" ] || [ $STARTEN = "OK" ] || [ $STARTEN = "oK" ] || [ $STARTEN = "JA" ] || [ $STARTEN = "jA" ] || [ $STARTEN = "YES" ] || [ $STARTEN = "YEs" ] || [ $STARTEN = "yES" ] || [ $STARTEN = "yeS" ] || [ $STARTEN = "YeS" ] || [ $STARTEN = "yES" ] || [ $STARTEN = "yEs" ]; then
 					screen -Sdm Teamspeak ./ts3server_minimal_runscript.sh start
 					echo ""
-					echo "Server wurde Gestartet!"
+					echo "Server wurde gestartet!"
 				else
 					echo ""
-					echo "Server wurde nicht Gestartet!"
+					echo "Server wurde nicht gestartet!"
 				fi
 			else
-				echo "Hier befindet sich Bereits ein Teamspeak"
+				echo "Hier befindet sich Bereits ein Teamspeak-Server"
 			fi
 		fi
 	else
-		echo "Teamspeak Server wird nicht Installiert!"
+		echo "Teamspeak-Server wird nicht Installiert!"
 	fi
 
 
