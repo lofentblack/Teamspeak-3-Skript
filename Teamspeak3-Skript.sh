@@ -270,7 +270,7 @@ clear
 
 			else
 				echo $gruen
-				echo "Server wird nicht Gelöscht!"
+				echo "Server wird nicht gelöscht!"
 			fi
 		elif [ $Teamspeak = 3 ]; then
 			LOGO
@@ -282,13 +282,13 @@ clear
 				cd ..
 				rm -r $Verzeichnis/
 				echo $rot
-				echo "Server wurde Erfolgreich Gelöscht!"
+				echo "Server wurde Erfolgreich gelöscht!"
 			else
 				echo $gruen
-				echo "Server wird nicht Gelöscht!"
+				echo "Server wird nicht gelöscht!"
 			fi
 		else
-			echo "Keine Angabe Erkannt"
+			echo "Keine Angabe erkannt"
 		fi
 	fi
 
